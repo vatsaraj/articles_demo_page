@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h3><center>Registered users and their posts</center></h3><hr>
+  {% for post in posts %}
+    <ul>
+      <li><h5><a href="/profile/{{ post.author }}">{{ post.author }}</a> - post : <a href="/posts/{{ post.id }}">{{ post.id }}</a></h5></li>
+    </ul>
+  {% endfor %}
+
+{% endblock %}

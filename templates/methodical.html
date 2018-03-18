@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  {% if method %}
+    <h3>This page was accessed using the {{ method }} method, in HTTP</h3>
+  {% else %}
+    <h3>Could not determine which HTTP method was used to access this page</h3>
+  {% endif %}
+  <hr>
+  <h5>This page supports GET and POST methods of access.<br>
+      To see a POST response, use curl in this manner:<br>
+      curl -X 'POST' http://localhost:port/method<br><br>
+      Where port is the port number at which this application is listening for HTTP requests.<br><br>
+      Bear in mind that the response text will be in HTML and not plain-text.
+  </h5>
+  <hr>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+body {
+  background-color : #e6f2ff
+}
+
+h1 {
+  color : black
+}
+
+h2 {
+  color : black
+}
+
+h3 {
+  color : black
+}
+
+h4 {
+  color : black
+}
+
+h5 {
+  color : black
+}
+
+h6 {
+  color : black
+}
+
+#navbar {
+  background-color : coral;
+  font-family : Arial;
+}
+
+#equations {
+  background-color : black;
+  color : #00ff00;
+  font-family : Courier
+}
+
+#summary {
+  display : inline;
+}
+
+#annotation {
+  display : inline;
+  font-size: 0.5rem;
+}

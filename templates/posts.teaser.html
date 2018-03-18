@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <center><h2>POSTS</h2></center><hr>
+  {% for post in posts %}
+    <ul>
+      <li>
+       <div id="summary"><a href="/posts/{{ post.title }}">{{ post.title }}</a>&nbsp;-&nbsp;{{ post.body[:40] }} ... </div><div id="annotation"><a href="/profile/{{ post.author }}">{{ post.author }}</a></div><div id="annotation"><br><a href="/posts/{{ post.id }}">[article &nbsp; {{ post.id }}]</a></div>
+    </ul>
+  {% endfor %}
+
+{% endblock %}

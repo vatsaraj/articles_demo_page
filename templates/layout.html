@@ -1,0 +1,16 @@
+<!doctype html>
+<head lang='en'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>The Silver Ingot Blogs</title>
+
+  <link rel='stylesheet' type='text/css' href={{ url_for('static', filename='cstyle.css') }} />
+
+  <body>
+
+    {% include 'navbar.html' %}
+
+    {% block body %}
+    {% endblock %}
+
+  </body>
+</head>

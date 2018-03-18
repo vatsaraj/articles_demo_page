@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h3><center>{{ post.title }}</center></h3>
+  <h6><center>by <a href='/profile/{{ post.author }}'>{{ post.author }}</a></center></h6>
+  <h5>{{ post.body }}</h5><hr>
+
+{% endblock %}

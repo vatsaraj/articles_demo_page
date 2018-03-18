@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h4>
+      {{ name }} rules in this corner of existence!
+      <hr>
+      Posts by {{ name }} : 
+      {% for post in posts %}
+        <a href="/posts/{{ post }}">{{ post }}</a>&nbsp;
+      {% endfor %}
+    </h4>
+
+{% endblock %}

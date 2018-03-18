@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h2>
+    <center>
+      The Silver Ingot Blogs
+    </center>
+    <hr>
+  </h2>
+  {% if quote %}
+    <h5><center>{{ quote }}</center></h5><br>
+  {% endif %}
+
+{% endblock %}
